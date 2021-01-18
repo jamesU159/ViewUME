@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>UME</title> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+  <body>
+      
+    <div id="sidebar">
+      <div class="toggle-btn">
+        <span>&#9776</span>
+      </div>
+      <ul>
+        <li>
+          <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
+        </li>
+      </ul>
+      <ul>
+        <button class="accordion">Perfil</button>
+      </ul>
+<button class="accordion">Documentos</button>
+<div class="panel">
+  <button class="accordion">Actualizar Documentos
+  </button>
+  <button class="accordion">
+  Ver documentos
+  </button>
+</div>
+
+      <button class="accordion">Excusa</button>
+<div class="panel">
+  <button class="accordion">
+  Entregar Excusa
+  </button>
+  <button class="accordion">
+  Ver estado de la excusa
+  </button>
+   <button class="accordion">
+  Eliminar excusa
+  </button>
+</div>
+
+<button class="accordion">Permiso</button>
+<div class="panel">
+  <button class="accordion">
+  Solicitar un permiso
+  </button>
+   <button class="accordion">
+  Ver estado del permiso
+  </button>
+   <button class="accordion">
+  cancelar permiso
+  </button>
+</div>
+
+<button class="accordion">Horario</button>
+<div class="panel">
+  <button class="accordion">
+  Ver horario
+  </button>
+</div>
+</div>
+      
+<div id="header">
+
+        <div id="centro1">
+
+        <div id="menu">
+                <ul>
+                    <li><a href="bienvenido.html">Volver</a></li>
+                    <li><a href="reporte.html">Reporte</a></li>
+                    <li><a href="index.html">Cerrar sesion</a></li>
+                </ul>
+        </div>
+      
+    </div>
+    
+
+    <script>const btnToggle = document.querySelector('.toggle-btn');
+
+btnToggle.addEventListener('click', function () {
+  console.log('clik')
+  document.getElementById('sidebar').classList.toggle('active');
+  console.log(document.getElementById('sidebar'))
+});</script>
+
+<script > var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}</script>
+  </body>
+</html>
