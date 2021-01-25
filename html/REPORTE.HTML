@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>UME</title> 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/prueba Tabla.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/reporte.css">
     </head>
   <body>
       
@@ -14,16 +14,17 @@
       </div>
       <ul>
         <li>
-          <img src="img/logoG.png" alt="Logo Fazt" class="logo">
+          <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
         </li>
       </ul>
       <ul>
         <button class="accordion">Perfil</button>
-        <a href="html/Actualizacion de perfil2.html"><button class="accordion" class="icon">Actualizar Perfil</button>
+        <button class="accordion" class="icon"><a href="perfil 1.1.html">Actualizar Perfil
+        </a></button>
       </ul>
 <button class="accordion">Documentos</button>
 <div class="panel">
-  <a href="html/mensaje actulizacion de perfil.html"><button class="accordion">Actualizar Documentos
+  <button class="accordion">Actualizar Documentos
   </button>
   <button class="accordion">
   Ver documentos
@@ -102,35 +103,54 @@ for (i = 0; i < acc.length; i++) {
   });
 }</script>
 
-   
-  </div>
-<div id="main-container">
+<div class="derecha">
+    
+    <script>
+window.onload = function () {
 
-    <table>
-      <thead>
-        <tr>
-          <th>Descripción</th><th>Mes</th><th>Costo</th>
-        </tr>
-      </thead>
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  theme: "light2", // "light1", "light2", "dark1", "dark2"
+  title: {
+    text: "Ingreso a la plataforma-2020"
+  },
+  subtitles: [{
+    text: "UME",
+    fontSize: 16
+  }],
+  axisY: {
+    prefix: "",
+    scaleBreaks: {
+      customBreaks: [{
+        
+      }]
+    }
+  },
+  data: [{
+    type: "column",
+    yValueFormatString: "",
+    dataPoints: [
+      { label: "Enero", y: 27 },
+      { label: "febrero", y: 32 },
+      { label: "marzo", y: 38 },
+      { label: "abril", y: 27 },
+      { label: "mayo", y:  34},
+      { label: "junio", y: 42 },
+      { label: "julio", y:  40},
+      { label: "agosto", y: 32 }, 
+      { label: "septiembre", y:40},
+      { label: "octubre", y: 23 },
+      { label: "noviembre", y: 43 },
+      { label: "diciembre", y: 42 }  
+    ]
+  }]
+});
+chart.render();
 
-      <tr>
-        <td>Agua</td><td>Enero</td><td>$ 3,000</td>
-      </tr>
-      <tr>
-        <td>Luz</td><td>Febrero</td><td>$ 5,500</td>
-      </tr>
-      <tr>
-        <td>Coche</td><td>Marzo</td><td>$ 10,100</td>
-      </tr>
-      <tr>
-        <td>Internet</td><td>Abril</td><td>$ 450</td>
-      </tr>
-    </table>
-  </div>
-
-<div class="icon"><ul>
-                    <li><a href="../html/mensaje actulizacion de perfil.html">Actualizar</a></li>
-                </ul>
+}
+</script>
+<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </div>
   </body>
 </html>

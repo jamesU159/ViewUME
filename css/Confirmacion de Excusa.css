@@ -1,0 +1,31 @@
+.derecha{
+  width: 80%;
+  height: 480px;
+  border: 0px solid orange;
+  float: right; 
+  margin-right: 40px;
+  margin-top:30px;
+}
+.titulo{
+  width: 85%;
+  height: 120px;
+  border: 0px solid orange;
+  float: center; 
+  margin-left: 40px;
+  margin-top:30px;
+
+}
+.titulo h3{
+  color: grey;
+  text-align: justify center;
+  font-size: xx-large;
+}
+
+.inputs{
+ width: 75%;
+  height: 330px;
+  border: 0px solid orange;
+  float: center; 
+  margin-left: 80px;
+  margin-top:30px;
+} 

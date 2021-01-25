@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>UME</title> 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/prueba Tabla.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/Actualizacion documentos.css">
     </head>
   <body>
       
@@ -14,11 +14,11 @@
       </div>
       <ul>
         <li>
-          <img src="img/logoG.png" alt="Logo Fazt" class="logo">
+          <img src="../img/logo.jpg" alt="Logo Fazt" class="logo">
         </li>
       </ul>
       <ul>
-        <button class="accordion">Perfil</button>
+        <a href="html/vista de Perfil.html"><button class="accordion">Perfil</button>
         <a href="html/Actualizacion de perfil2.html"><button class="accordion" class="icon">Actualizar Perfil</button>
       </ul>
 <button class="accordion">Documentos</button>
@@ -102,35 +102,35 @@ for (i = 0; i < acc.length; i++) {
   });
 }</script>
 
-   
-  </div>
-<div id="main-container">
+</div>
+<div class="derecha">
+    <div class="titulo"><h3>Para actualizar su documentacion por favor, ingrese la informacion correspondiente y anexe la documentacion nueva. <br> NOTA: Esta documentacion sera revisada por el administrador </h3></div>
+    <div class="cuadro1">
+      <h4>Eliga los documentos a actualizar</h4>
+      <select name="documentos">
 
-    <table>
-      <thead>
-        <tr>
-          <th>Descripción</th><th>Mes</th><th>Costo</th>
-        </tr>
-      </thead>
 
-      <tr>
-        <td>Agua</td><td>Enero</td><td>$ 3,000</td>
-      </tr>
-      <tr>
-        <td>Luz</td><td>Febrero</td><td>$ 5,500</td>
-      </tr>
-      <tr>
-        <td>Coche</td><td>Marzo</td><td>$ 10,100</td>
-      </tr>
-      <tr>
-        <td>Internet</td><td>Abril</td><td>$ 450</td>
-      </tr>
-    </table>
+
+<option>Certificado de EPS</option>
+<option>Certificado de pension</option>
+
+<option>Antecedentes disciplinarios</option>
+
+<option selected>Certificado de alturas</option>
+
+</select>
+      <h4>Anexe los documentos que desea actualizar</h4>
+      <input type="file">
+      <br>
+      <br>
+      <h4>Para cargar la documentacion nueva por favor digite su contraseña</h4>
+      <input type="password">
+    </div>
+    <div class="cuadro2"></div>
+    <div class="boton">
+      <button class="button button1" onclick="location.href='documentos 2.html'">Actualizar</button>
+    </div>
   </div>
 
-<div class="icon"><ul>
-                    <li><a href="../html/mensaje actulizacion de perfil.html">Actualizar</a></li>
-                </ul>
-  </div>
-  </body>
+</body>
 </html>

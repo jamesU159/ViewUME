@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 
 #sidebar {
@@ -212,4 +213,46 @@ margin: -100px 10px;
   border-radius: 8px;
   transition:all .5s ease-in-out;
 }
+.contenedor{
+  width: 80%;
+  height: 480px;
+  border: 0px solid green;
+  float: right; 
+  margin-right: 40px;
+  margin-top:30px;
+  padding-top: 100px;
+   
+}
 
+.derecha{
+  width: 48%;
+  height: 480px;
+  border: 0px solid orange;
+  float: right; 
+  
+}
+
+.icon ul li{
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  border: 0px solid black;
+  border-radius: 8px;
+}
+
+.icon ul li a{
+  color: grey;
+  text-decoration: none;
+  padding: 7px 10px;
+  margin: 0px 4px; 
+  font-size: x-large;
+
+}
+
+.izquierda{
+  width: 42%;
+  height: 480px;
+  border: 0px solid orange;
+  float: absolute; 
+  
+}

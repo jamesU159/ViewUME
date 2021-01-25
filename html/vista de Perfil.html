@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>UME</title> 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/prueba Tabla.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     </head>
   <body>
       
@@ -14,16 +13,17 @@
       </div>
       <ul>
         <li>
-          <img src="img/logoG.png" alt="Logo Fazt" class="logo">
+          <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
         </li>
       </ul>
       <ul>
-        <button class="accordion">Perfil</button>
-        <a href="html/Actualizacion de perfil2.html"><button class="accordion" class="icon">Actualizar Perfil</button>
+        <a href="../html/vista de Perfil.html"><button class="accordion">Perfil</button>
+        <a href="../html/Actualizacion de perfil2.html"><button class="accordion" class="icon">Actualizar Perfil
+        </button>
       </ul>
 <button class="accordion">Documentos</button>
 <div class="panel">
-  <a href="html/mensaje actulizacion de perfil.html"><button class="accordion">Actualizar Documentos
+  <a href="../html/"></a><button class="accordion">Actualizar Documentos
   </button>
   <button class="accordion">
   Ver documentos
@@ -45,7 +45,7 @@
 
 <button class="accordion">Permiso</button>
 <div class="panel">
-  <button class="accordion">
+  <a href="../html/permiso.html"></a><button class="accordion">
   Solicitar un permiso
   </button>
    <button class="accordion">
@@ -102,35 +102,48 @@ for (i = 0; i < acc.length; i++) {
   });
 }</script>
 
-   
-  </div>
-<div id="main-container">
+   <div class="contenedor">
+   <div class="derecha">
+  
+  <div class="inputs">
+  <form action="/action_page.php">
+  <label for="fname"> Primer Nombre:</label>
+  <input type="text" id="fname" name="fname"placeholder="Carlos"><br><br>
+  <label for="fname"> Segundo Nombre:</label>
+  <input type="text" id="fname" name="fname"placeholder="Jose"><br><br>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Descripción</th><th>Mes</th><th>Costo</th>
-        </tr>
-      </thead>
+  <label for="lname">Primer Apellido:</label>
+  <input type="text" id="apellido" name="lname"placeholder="Castro"><br><br>
+  <label for="lname">Segundo Apellido:</label>
+  <input type="text" id="apellido" name="lname"placeholder="Pinzon"><br><br>
 
-      <tr>
-        <td>Agua</td><td>Enero</td><td>$ 3,000</td>
-      </tr>
-      <tr>
-        <td>Luz</td><td>Febrero</td><td>$ 5,500</td>
-      </tr>
-      <tr>
-        <td>Coche</td><td>Marzo</td><td>$ 10,100</td>
-      </tr>
-      <tr>
-        <td>Internet</td><td>Abril</td><td>$ 450</td>
-      </tr>
-    </table>
+   <label for="fname">Numero de cedula:</label>
+  <input type="text" id="cedula" name="lname"placeholder="1032456543"><br><br> 
+
+  <label for="fname">Fecha de nacimiento:</label>
+  <input type="text" id="fecha" name="lname" placeholder="23 de enero de 1990"><br><br>
+
+  <label for="fname">Numero de celular:</label>
+  <input type="text" id="motivo" name="fname" placeholder="3142356754"><br><br>
+
+  <label for="fname">Correo electronico:</label>
+  <input type="email" id="correo" name="fname" placeholder="carjo34@hotmail.com"><br><br>
+
+  <label for="lname">Añadir foto:</label>
+  <input type="file"><br><br>
+
+  <label for="lname">Cargo:</label>
+  <input type="text" id="apellido" name="lname"placeholder="empleado"><br><br>
+  
+  <br><br>
+  
   </div>
 
-<div class="icon"><ul>
-                    <li><a href="../html/mensaje actulizacion de perfil.html">Actualizar</a></li>
-                </ul>
+</div>
+
+  <div class="izquierda">
+    <img src="../img/3.png" width="100%" height="300px">
   </div>
+</div>
   </body>
 </html>

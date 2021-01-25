@@ -1,0 +1,47 @@
+.derecha{
+  width: 80%;
+  height: 480px;
+  border: 0px solid orange;
+  float: right; 
+  margin-right: 40px;
+  margin-top:30px;
+}
+.i{
+  width: 49%;
+  height: 480px;
+  border: 0px solid green;
+  float: left; 
+}
+
+.d{
+  width: 49%;
+  height: 240px;
+  border: 0px solid red;
+  float: right; 
+
+}
+.d h2{
+  color: grey;
+  font-family: 'garamond';
+  text-align: justify center;
+}
+.img{
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.button {
+  border-radius: 10px;
+  color: grey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: center;
+}
+.btn:hover{
+  background:  black;
+  border-radius: 8px;
+  transition:all .5s ease-in-out;
+}

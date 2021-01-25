@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>UME</title> 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/prueba Tabla.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/Registrar Excusa.css">
     </head>
   <body>
       
@@ -14,11 +14,11 @@
       </div>
       <ul>
         <li>
-          <img src="img/logoG.png" alt="Logo Fazt" class="logo">
+          <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
         </li>
       </ul>
       <ul>
-        <button class="accordion">Perfil</button>
+        <a href="html/vista de Perfil.html"><button class="accordion">Perfil</button>
         <a href="html/Actualizacion de perfil2.html"><button class="accordion" class="icon">Actualizar Perfil</button>
       </ul>
 <button class="accordion">Documentos</button>
@@ -101,36 +101,29 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }</script>
+</div>
 
-   
-  </div>
-<div id="main-container">
+<div class="derecha">
+    <div class="titulo"><h3>No olvides cargar el archivo de tu excusa  anexando un motivo
+(recuerda que esta informacon sera validada y posteriormente se dara respuesta por parte de tu supervisor a cargo)</h3>
+</div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Descripción</th><th>Mes</th><th>Costo</th>
-        </tr>
-      </thead>
+<div class="inputs">
+  <form action="/action_page.php">
+  <label for="fname">Motivo:</label>
+  <input type="text" id="fname" name="fname"><br><br>
 
-      <tr>
-        <td>Agua</td><td>Enero</td><td>$ 3,000</td>
-      </tr>
-      <tr>
-        <td>Luz</td><td>Febrero</td><td>$ 5,500</td>
-      </tr>
-      <tr>
-        <td>Coche</td><td>Marzo</td><td>$ 10,100</td>
-      </tr>
-      <tr>
-        <td>Internet</td><td>Abril</td><td>$ 450</td>
-      </tr>
-    </table>
+  <label for="lname">Archivo:</label>
+  <input type="file" id="apellido" name="lname"><br><br>
+
+<div class="titulo"><h3>Para confirmar el envio de la excusa, Ingresa tu contraseña </h3>
+</div>
+  <label for="fname">contraseña:</label>
+  <input type="Passwor" id="fname" name="fname"><br><br>
+    </form>
+
+    <button class="button button1" onclick="location.href='excusa 1.html'">ENVIAR</button>
   </div>
 
-<div class="icon"><ul>
-                    <li><a href="../html/mensaje actulizacion de perfil.html">Actualizar</a></li>
-                </ul>
-  </div>
-  </body>
+</body>
 </html>

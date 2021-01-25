@@ -1,0 +1,86 @@
+#main-container{
+	margin: 5px auto;
+	width: 800px;
+}
+
+table{
+	background-color: black;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+	color: white;
+	margin-left: 0px;
+	height: 400px;
+}
+
+th, td{
+	padding: 25px;
+}
+
+thead{
+	background-color: black;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+  
+}
+
+tr:nth-child(even){
+	background-color: grey;
+}
+
+tr:hover td{
+	background-color: yellow;
+	color: white;
+  font-weight:bold;
+ font-size:1.3em;
+}
+@media screen and (max-width: 600px) {
+       table {
+           width:100%;
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tr td:first-child {
+           background: #f0f0f0;
+           font-weight:bold;
+           font-size:1.3em;
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+       }
+}
+
+.boton{
+  width: 15%;
+  height: 50px;
+  border: 0px solid red;
+  float: right; 
+  
+}
+.button {
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: center;
+}
+.btn:hover{
+  background:  black;
+  border-radius: 8px;
+  transition:all .5s ease-in-out;
+}

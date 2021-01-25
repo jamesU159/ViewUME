@@ -1,0 +1,10 @@
+.abajo{
+  width: 60%;
+  height: 110px;
+  border: 0px solid red;
+  float: left; 
+  margin-left: 200px;
+  margin-top:30px;
+  text-align: justify left;
+  color: blue;
+}
